@@ -1,0 +1,134 @@
+/* El tamaño de la fuente del nav */
+.size {
+    font-size: 13px;
+}
+
+.navSuperior { 
+    margin-bottom: 5%;
+}
+/*color del nav*/
+nav{
+    background-color: grey;
+}
+
+/* El color de comprar tickets */
+.verde{
+    color: green;
+}
+
+ /* Conf. Bs As */
+h2{
+  text-align: right;
+  font-weight: bold;
+ }    
+
+ .documentacion{
+    font-size: 12px;
+ }
+ 
+/* frases centradas */
+.frases{
+    text-align: center;
+    font-size: 15px;
+}
+
+/* nuevo tamaño de las cartas*/
+.col1{
+margin-top: 5%;
+margin-bottom: 5%;
+height: 180px;
+width: 250px;
+text-align: center;
+}
+
+/* nuevo posicion del conjunto de cartas */
+.posicionCartas{
+ justify-content: center;
+}
+
+.estudiante {
+    border-color: blue;
+}
+
+.trainee {
+    border-color: green;
+}
+
+.junior {
+    border-color: orange;
+}
+.total1{
+    display:flex;
+    justify-content: center;
+}
+
+.total{
+    background-color: lightblue;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* nuevo posicion botones verdes */
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.botonVerde{
+    background-color: #96C93E;
+    margin: 5px;
+    border-radius: 5px ;
+    text-align: center;
+    height: 40px;
+    color: white;
+    border: 0px;
+}
+ 
+ .posicion{
+    padding-bottom: 20px;
+} 
+
+.colorFooter{
+    background-color: #1E5170;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 575.9px){
+    .texto{
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.9px){
+    .texto{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .texto{
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+    .texto{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.9px ){
+    .texto{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .texto{
+        font-size: 20px;
+    }
+}
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+    <link rel="stylesheet" href="comprarTickets.css">
+    <title>Codo a codo</title>
+</head>
+<body>
+  <!-- acá empieza el nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navSuperior" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="codoacodo.png" alt="Logo" width="70" height="30" class="d-inline-block align-text-top">
+              Conf Bs As
+            </a>
+          </div>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse hover" id="navbarNavDropdown">
+            <ul class="navbar-nav size">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link verde" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- acá empiezan las tarjetas -->
+      <div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 posicionCartas">
+          <div class="col1">
+            <div class="card h-100 estudiante">
+              <div class="card-body">
+                <h5>Estudiante</h5>
+                <p>Tienen un descuento</p>
+                <h5>80%</h5>
+                <p class="documentacion">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col1">
+            <div class="card h-100 trainee">
+              <div class="card-body">
+                <h5>Trainee</h5>
+                <p>Tienen un descuento</p>
+                <h5>50%</h5>
+                <p class="documentacion">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col1">
+            <div class="card h-100 junior">
+              <div class="card-body">
+                <h5>Junior</h5>
+                <p>Tienen un descuento</p>
+                <h5>15%</h5>
+                <p class="documentacion">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="frases">
+        <p>VENTA</p>
+        <h3>VALOR DE TICKET $200</h3>
+      </div>
+      
+      <!-- acá empieza el formulario -->
+      <form id="formulario">
+       <div class="row g-3 d-flex justify-content-center posicion">
+        <div class="col-4">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col-4">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+        <div class="col-8">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+          </div>
+
+        <div class="row g-3 d-flex justify-content-center posicion">
+          <div class="col-4">
+            <label for="cantidad" class="form-label">Cantidad</label>
+            <input class="form-control" type="number" id="cantidad" placeholder="Cantidad" aria-label="default input example" min="1">
+          </div>
+
+          <div class="col-4">
+           <label for="categoria1" class="form-label">Categoría</label>
+           
+           <select class="form-select" id="categorias" aria-label="Default select example">
+           <option selected>--Seleccione--</option>
+           <option value="">Sin categoría</option>
+           <option value="estudiante">Estudiante</option>
+           <option value="trainee">Trainee</option>
+           <option value="junior">Junior</option>
+          </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="total1">
+        <p class="total col-8" id="totalAPagar">Total a pagar: $</p>
+      </div>
+
+      <div class="botones">
+        <button id="resumen" class="botonVerde col-4" type=" button">Resumen</button>
+        <button class="botonVerde col-4" type=" button" id="borrar">Borrar</button>
+       </div>
+     </form>
+
+       <!-- acá empieza el footer -->
+      <footer>
+      <div>  
+<ul class="nav justify-content-center colorFooter">
+  <li class="nav-item">
+    <a class="nav-link colorFooter" aria-current="page" href="#">Preguntas frecuentes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Contáctanos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Prensa</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Conferencias</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Términos y condiciones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Privacidad</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Estudiantes</a>
+  </li>
+</ul>
+      </div>
+      </footer>
+      <script src="comprarTickets.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

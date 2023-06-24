@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.js">
+    <link rel="stylesheet" href="estilos.css">
+    <title>TPjs</title>
+</head>
+<body>
+  <!-- empezamos con el nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="codoacodo.png" alt="Logo" width="70" height="30" class="d-inline-block align-text-top">
+              Conf Bs As
+            </a>
+          </div>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse hover" id="navbarNavDropdown">
+            <ul class="navbar-nav size">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link verdee" href="comprarTicket.html">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- comienza el carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active oscuro">
+            <img src="ba1.jpg" class="d-block w-100 opacity-25" alt="...">
+            <!-- este es el texto sobre la imagen-->
+            <div class="carousel-caption">
+              <h2>Conf Bs As</h2>
+              <div class="texto offset-md-6">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aperiam laboriosam earum quasi pariatur debitis rem placeat sint, vero minus maxime esse voluptates iusto illo qui praesentium numquam ducimus ratione?</p>
+            </div>
+             <!-- botones en el carrusel -->
+            <div class="d-grid d-md-flex justify-content-md-end botones">
+              <button class="btn btn-outline-light me-md-2" type="button">Quiero ser orador</button>
+              <button class="btn btn-success" type="button">Comprar tickets</button>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="ba2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="ba3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <!-- indicadores en el carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <div class="oraciones">
+        <h5>Conoce a los</h5>
+        <h6>ORADORES</h6>
+      </div>
+
+      <!-- acá empiezan las cards--> 
+      <div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 posicionCartas">
+          <div class="col11">
+            <div class="card h-100">
+              <img src="steve.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary-amarillo">JavaScript</button>
+                  </div>
+                  <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary-celeste">React</button>
+                  </div>
+                </div>
+                <h5 class="card-title">Steve Jobs</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam laborum doloremque earum natus. Repellat ipsa voluptate ab dolore, architecto eaque aut assumenda culpa quia possimus autem nisi quasi dicta voluptas!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col11">
+            <div class="card h-100">
+              <img src="bill.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary-amarillo">JavaScript</button>
+                  </div>
+                  <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary-celeste">React</button>
+                  </div>
+                </div>
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam tenetur quam, fugiat nisi adipisci incidunt. Modi temporibus libero ullam aliquid quidem quaerat optio, est perspiciatis vero earum veniam facere dignissimos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col11">
+            <div class="card h-100">
+              <img src="ada.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary-gris">Negocios</button>
+                  </div>
+                  <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary-rojo">Startups</button>
+                  </div>
+                </div>
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem, similique sed, a officia et provident voluptates doloribus ea rerum inventore, nesciunt pariatur molestias! Laudantium saepe laboriosam veritatis rerum ducimus cupiditate?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      
+      <!-- acá empieza la tarjeta partida -->
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="hawaii2.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6 fondo-honolulu">
+            <div class="card-body">
+              <h5 class="card-title">Bs As - Octubre</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cum assumenda voluptas harum ad officia corrupti, adipisci sequi illum, consequatur neque repudiandae veniam quisquam ex ducimus. Aut rerum aperiam doloremque?</p>
+              <button type="button" class="btn btn-outline-light">Conocé más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="oraciones">
+        <p>CONVIÉRTETE EN UN</p>
+        <h6>ORADOR</h6>
+        <P>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</P>
+      </div>
+      
+      <!-- arranca el formulario -->
+      <div class="row g-3 d-flex justify-content-center posicion">
+        <div class="col-3">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col-3">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+
+      <div class="mb-3 col-6 mx-auto">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+        <div>
+          <p class="recordar">Recuerda incluir un título para tu charla</p>
+        </div>
+      </div>
+
+       <div class="enviar">
+        <button class="botonEnviar col-6" type="button">Enviar</button>
+       </div>
+       
+       <!-- acá empieza el footer -->
+      <footer>
+      <div>  
+<ul class="nav justify-content-center colorFooter">
+  <li class="nav-item">
+    <a class="nav-link colorFooter" aria-current="page" href="#">Preguntas frecuentes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Contáctanos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Prensa</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Conferencias</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Términos y condiciones</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Privacidad</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link colorFooter" href="#">Estudiantes</a>
+  </li>
+</ul>
+      </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
